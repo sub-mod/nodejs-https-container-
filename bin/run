@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+cd /usr/src/app/
+
+
+host="$(awk 'NR==1 {print $1}' /etc/hosts)"
+
+echo $host
+
+npm start
